@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFM.WebAPI", "WFM\WFM.WebAPI.csproj", "{952DFE24-6600-43E0-8263-95AB0E9A42D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFM.Entity", "WFM.Entity\WFM.Entity.csproj", "{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFM.Services", "WFM.Services\WFM.Services.csproj", "{FE257EEE-AF83-46E1-B2E9-1960B1287957}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{952DFE24-6600-43E0-8263-95AB0E9A42D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952DFE24-6600-43E0-8263-95AB0E9A42D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952DFE24-6600-43E0-8263-95AB0E9A42D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952DFE24-6600-43E0-8263-95AB0E9A42D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE257EEE-AF83-46E1-B2E9-1960B1287957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE257EEE-AF83-46E1-B2E9-1960B1287957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE257EEE-AF83-46E1-B2E9-1960B1287957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE257EEE-AF83-46E1-B2E9-1960B1287957}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E7C1DB8-BB2B-4FBD-A869-75DF755BDB3D}
+	EndGlobalSection
+EndGlobal
