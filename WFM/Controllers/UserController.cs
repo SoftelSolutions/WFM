@@ -44,7 +44,7 @@ namespace WFM.WebAPI.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return "value 1";
         }
 
         // POST api/<controller>
