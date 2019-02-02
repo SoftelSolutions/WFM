@@ -27,6 +27,7 @@ namespace WFM.WebAPI.Controllers
         {
             try
             {
+                //get all users
                 var result = _userService.getAllUsers();
                 var users = _mapper.Map<List<UserResponse>>(result);
                 return users;
