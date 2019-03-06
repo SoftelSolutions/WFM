@@ -28,6 +28,7 @@ namespace WFM.WebAPI.Controllers
         [HttpGet]
         public IEnumerable<UserResponse> Get()
         {
+            //usercontroller
             //var identity = HttpContext.User.Identity as ClaimsIdentity;
             //if (identity != null)
             //{
