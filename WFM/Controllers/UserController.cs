@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WFM.Services.Interfaces;
 using WFM.Services.Services;
@@ -11,6 +13,7 @@ using WFM.WebAPI.DTOs;
 
 namespace WFM.WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     public class UserController : Controller
     {
@@ -25,19 +28,19 @@ namespace WFM.WebAPI.Controllers
         [HttpGet]
         public IEnumerable<UserResponse> Get()
         {
-            try
-            {
-                //get all users 
-                var result = _userService.getAllUsers();
-                var users = _mapper.Map<List<UserResponse>>(result);
-                return users;
-            }
-            catch (Exception)
-            {
+            //var identity = HttpContext.User.Identity as ClaimsIdentity;
+            //if (identity != null)
+            //{
+            //    IEnumerable<Claim> claims = identity.Claims;
+            //    // or
+            //    //identity.FindFirst("ClaimName").Value;
 
-                return null; 
-            }
-           
+            //}
+
+            //get all users 
+            var result = _userService.getAllUsers();
+            var users = _mapper.Map<List<UserResponse>>(result);
+            return users;
         }
 
         // GET api/<controller>/5
