@@ -5,6 +5,6 @@ namespace WFM.Services.Interfaces
 {
     public interface ILoginService
     {
-        bool login(string userName, string password);
+        bool Login(string userName, string password);
     }
 }

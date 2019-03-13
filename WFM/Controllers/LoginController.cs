@@ -38,7 +38,7 @@ namespace WFM.WebAPI.Controllers
         {
             List<LoginResponse> loginResp = new List<LoginResponse>();
 
-            if(_loginService.login(login.userName, login.password))
+            if(_loginService.Login(login.userName, login.password))
             {
                 string token = getToken();
 
