@@ -489,3 +489,23 @@ WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
 2019-03-18 23:27:26.498 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
 2019-03-18 23:27:26.551 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 8102.5462ms
 2019-03-18 23:27:26.560 -04:00 [Information] Request finished in 8219.883ms 200 application/json; charset=utf-8
+2019-03-18 23:54:01.440 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:54:01.440 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:54:01.440 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:54:01.440 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:54:01.767 -04:00 [Information] Request finished in 359.0913ms 200 
+2019-03-18 23:54:02.298 -04:00 [Information] Request finished in 918.9577ms 404 
+2019-03-18 23:54:02.447 -04:00 [Information] Request finished in 1068.3087ms 200 text/html
+2019-03-18 23:54:02.447 -04:00 [Information] Request finished in 1068.323ms 200 text/html
+2019-03-18 23:54:02.939 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:54:03.395 -04:00 [Information] Request finished in 455.6357ms 200 application/json;charset=utf-8
+2019-03-18 23:54:13.841 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:54:16.467 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 23:54:18.402 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 23:54:22.161 -04:00 [Information] Executed DbCommand ("463"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 23:54:22.744 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 23:54:22.833 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 8710.0975ms
+2019-03-18 23:54:22.865 -04:00 [Information] Request finished in 9027.6263ms 200 application/json; charset=utf-8
