@@ -1,0 +1,91 @@
+2019-03-02 03:51:21.655 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-02 03:51:21.655 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-02 03:51:21.973 -05:00 [Information] Request finished in 328.3041ms 200 
+2019-03-02 03:51:24.605 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-02 03:51:24.656 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 03:51:24.807 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 2437.3099ms
+2019-03-02 03:51:24.816 -05:00 [Information] Request finished in 3188.7126ms 200 application/json; charset=utf-8
+2019-03-02 20:03:02.160 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-02 20:03:02.160 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-02 20:03:02.297 -05:00 [Information] Request finished in 152.6571ms 200 
+2019-03-02 20:03:02.629 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-02 20:03:02.710 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:03:02.918 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 343.5754ms
+2019-03-02 20:03:02.925 -05:00 [Information] Request finished in 790.1218ms 200 application/json; charset=utf-8
+2019-03-02 20:03:30.538 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 20:03:30.676 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:03:30.701 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 111.2642ms
+2019-03-02 20:03:30.701 -05:00 [Information] Request finished in 162.81ms 400 application/json; charset=utf-8
+2019-03-02 20:03:44.707 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 20:03:44.710 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:03:44.710 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 1.1975ms
+2019-03-02 20:03:44.710 -05:00 [Information] Request finished in 3.2039ms 400 application/json; charset=utf-8
+2019-03-02 20:04:02.506 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 20:04:22.079 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:04:22.079 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 19573.3635ms
+2019-03-02 20:04:22.103 -05:00 [Information] Request finished in 19597.3102ms 400 application/json; charset=utf-8
+2019-03-02 20:14:18.842 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 20:14:22.887 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:14:22.887 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 4044.3078ms
+2019-03-02 20:14:22.887 -05:00 [Information] Request finished in 4045.2487ms 400 application/json; charset=utf-8
+2019-03-02 20:14:42.284 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/login  
+2019-03-02 20:14:42.290 -05:00 [Information] Request finished in 5.9551ms 404 
+2019-03-02 20:20:52.772 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-02 20:20:52.772 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-02 20:20:52.961 -05:00 [Information] Request finished in 205.5608ms 200 
+2019-03-02 20:21:00.770 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 20:21:00.788 -05:00 [Warning] Heartbeat took longer than "00:00:01" at "03/03/2019 01:21:00 +00:00".
+2019-03-02 20:21:00.795 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-02 20:21:00.840 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:21:00.922 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:21:00.985 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 139.5402ms
+2019-03-02 20:21:00.985 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 7721.7545ms
+2019-03-02 20:21:00.989 -05:00 [Information] Request finished in 219.4002ms 400 application/json; charset=utf-8
+2019-03-02 20:21:00.989 -05:00 [Information] Request finished in 8240.7545ms 200 application/json; charset=utf-8
+2019-03-02 20:21:29.353 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-02 20:21:29.353 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-02 20:21:29.532 -05:00 [Information] Request finished in 188.1034ms 200 
+2019-03-02 20:21:29.891 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-02 20:21:29.942 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:21:30.102 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 290.9953ms
+2019-03-02 20:21:30.113 -05:00 [Information] Request finished in 777.7314ms 200 application/json; charset=utf-8
+2019-03-02 20:22:00.131 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 20:22:00.320 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 20:22:00.356 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 155.9367ms
+2019-03-02 20:22:00.356 -05:00 [Information] Request finished in 225.3985ms 400 application/json; charset=utf-8
+2019-03-02 23:01:42.579 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-02 23:01:42.579 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-02 23:01:42.780 -05:00 [Information] Request finished in 217.4208ms 200 
+2019-03-02 23:01:43.123 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-02 23:01:43.185 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 23:01:43.368 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 304.9984ms
+2019-03-02 23:01:43.376 -05:00 [Information] Request finished in 824.1928ms 200 application/json; charset=utf-8
+2019-03-02 23:01:43.453 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/favicon.ico  
+2019-03-02 23:01:43.457 -05:00 [Information] Request finished in 4.0095ms 404 
+2019-03-02 23:02:02.733 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 23:02:02.863 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 23:02:02.888 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 86.6019ms
+2019-03-02 23:02:02.889 -05:00 [Information] Request finished in 155.2458ms 400 application/json; charset=utf-8
+2019-03-02 23:02:54.317 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-02 23:02:54.317 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-02 23:02:54.508 -05:00 [Information] Request finished in 206.5528ms 200 
+2019-03-02 23:02:54.622 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 0
+2019-03-02 23:02:54.900 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-02 23:02:54.934 -05:00 [Information] Authorization failed for user: null.
+2019-03-02 23:02:54.938 -05:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-03-02 23:02:54.944 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-02 23:02:54.947 -05:00 [Information] Executing ChallengeResult with authentication schemes ([]).
+2019-03-02 23:02:54.972 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 72.3729ms
+2019-03-02 23:02:55.116 -05:00 [Error] Something went wrong: System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found.
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Mvc.ChallengeResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WFM.WebAPI.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Projects\SoftelSolution\WFM\WFM\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2019-03-02 23:02:55.190 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 361.3594ms
+2019-03-02 23:02:55.196 -05:00 [Information] Request finished in 573.3377ms 500 application/json
+2019-03-02 23:02:55.196 -05:00 [Information] Request finished in 905.8898ms 200 application/json; charset=utf-8

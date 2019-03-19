@@ -1,0 +1,108 @@
+2019-03-04 22:13:42.694 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-04 22:13:42.694 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-04 22:13:42.944 -05:00 [Information] Request finished in 248.5931ms 200 
+2019-03-04 22:13:45.729 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 22:13:45.775 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 22:13:45.926 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 2334.3588ms
+2019-03-04 22:13:45.936 -05:00 [Information] Request finished in 3267.235ms 200 application/json; charset=utf-8
+2019-03-04 22:13:46.014 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/favicon.ico  
+2019-03-04 22:13:46.036 -05:00 [Information] Request finished in 21.8612ms 404 
+2019-03-04 22:13:50.903 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 44
+2019-03-04 22:13:53.957 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-04 22:14:02.882 -05:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-04 22:14:06.115 -05:00 [Information] Executed DbCommand ("722"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-04 22:14:06.248 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 22:14:06.256 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 15306.7091ms
+2019-03-04 22:14:06.263 -05:00 [Information] Request finished in 15359.9201ms 200 application/json; charset=utf-8
+2019-03-04 22:14:17.642 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/user  
+2019-03-04 22:14:17.700 -05:00 [Information] Successfully validated the token.
+2019-03-04 22:14:17.704 -05:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-04 22:14:17.725 -05:00 [Information] Authorization was successful for user: "admin".
+2019-03-04 22:14:21.828 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 22:14:21.835 -05:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-04 22:14:22.085 -05:00 [Information] Executed DbCommand ("242"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]"
+2019-03-04 22:14:22.121 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 22:14:22.128 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" in 4421.6491ms
+2019-03-04 22:14:22.128 -05:00 [Information] Request finished in 4486.2783ms 200 application/json; charset=utf-8
+2019-03-04 22:14:53.882 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-04 22:14:53.882 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/user  
+2019-03-04 22:14:53.882 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-04 22:14:54.097 -05:00 [Information] Request finished in 214.0405ms 200 
+2019-03-04 22:14:54.341 -05:00 [Information] Successfully validated the token.
+2019-03-04 22:14:54.357 -05:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-04 22:14:54.506 -05:00 [Information] Authorization was successful for user: "admin".
+2019-03-04 22:14:56.613 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 22:14:56.677 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 22:14:56.776 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 2314.6969ms
+2019-03-04 22:14:56.783 -05:00 [Information] Request finished in 2930.8327ms 200 application/json; charset=utf-8
+2019-03-04 22:14:58.114 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 22:33:43.172 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/user  
+2019-03-04 22:33:43.511 -05:00 [Information] Successfully validated the token.
+2019-03-04 22:33:43.520 -05:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-04 22:33:43.754 -05:00 [Information] Authorization was successful for user: "admin".
+2019-03-04 22:33:44.065 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 22:33:44.485 -05:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-04 22:33:47.834 -05:00 [Information] Executed DbCommand ("665"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]"
+2019-03-04 22:33:48.000 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 22:33:48.100 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" in 4368.198ms
+2019-03-04 22:33:48.109 -05:00 [Information] Request finished in 4958.4193ms 200 application/json; charset=utf-8
+2019-03-04 22:47:07.586 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-04 22:47:07.586 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-04 22:47:07.768 -05:00 [Information] Request finished in 182.7789ms 200 
+2019-03-04 22:47:09.643 -05:00 [Warning] Heartbeat took longer than "00:00:01" at "03/05/2019 03:47:09 +00:00".
+2019-03-04 22:47:09.649 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 22:47:09.690 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 22:47:09.815 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 1756.9051ms
+2019-03-04 22:47:09.818 -05:00 [Information] Request finished in 2250.4278ms 200 application/json; charset=utf-8
+2019-03-04 22:47:21.896 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 44
+2019-03-04 22:47:24.997 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-04 22:47:32.817 -05:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-04 22:47:35.254 -05:00 [Information] Executed DbCommand ("315"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-04 23:32:26.327 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-04 23:32:26.327 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-04 23:32:26.631 -05:00 [Information] Request finished in 312.4566ms 200 
+2019-03-04 23:32:29.517 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 23:32:29.554 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 23:32:29.680 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 2695.9253ms
+2019-03-04 23:32:29.686 -05:00 [Information] Request finished in 3399.7919ms 200 application/json; charset=utf-8
+2019-03-04 23:32:36.959 -05:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/login application/json 44
+2019-03-04 23:32:37.663 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-04 23:32:38.182 -05:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-04 23:32:40.325 -05:00 [Information] Executed DbCommand ("305"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-04 23:32:40.519 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 23:32:40.536 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 3478.4174ms
+2019-03-04 23:32:40.546 -05:00 [Information] Request finished in 3586.5923ms 200 application/json; charset=utf-8
+2019-03-04 23:34:40.629 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/user  
+2019-03-04 23:34:40.696 -05:00 [Information] Successfully validated the token.
+2019-03-04 23:34:40.700 -05:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-04 23:34:40.723 -05:00 [Information] Authorization was successful for user: null.
+2019-03-04 23:34:40.724 -05:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-04 23:34:40.745 -05:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-04 23:34:41.016 -05:00 [Information] Executed DbCommand ("239"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]"
+2019-03-04 23:34:41.052 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-04 23:34:41.058 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" in 355.3121ms
+2019-03-04 23:34:41.058 -05:00 [Information] Request finished in 428.837ms 200 application/json; charset=utf-8
+2019-03-04 23:55:55.448 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/user  
+2019-03-04 23:55:55.503 -05:00 [Information] Authorization failed for user: null.
+2019-03-04 23:55:55.512 -05:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-03-04 23:55:55.520 -05:00 [Information] Executing ChallengeResult with authentication schemes ([]).
+2019-03-04 23:55:55.544 -05:00 [Information] AuthenticationScheme: "Bearer" was challenged.
+2019-03-04 23:55:55.544 -05:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" in 73.4566ms
+2019-03-04 23:55:55.545 -05:00 [Information] Request finished in 102.4836ms 401 
+2019-03-04 23:56:44.337 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/sale  
+2019-03-04 23:56:44.344 -05:00 [Information] Request finished in 7.3494ms 404 

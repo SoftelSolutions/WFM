@@ -1,0 +1,16 @@
+2019-02-27 21:35:25.077 -05:00 [Information] Log: Log.Information
+2019-02-27 21:35:25.077 -05:00 [Information] Log: Log.Information
+2019-02-27 21:35:25.135 -05:00 [Warning] Log: Log.Warning
+2019-02-27 21:35:25.135 -05:00 [Warning] Log: Log.Warning
+2019-02-27 21:35:25.136 -05:00 [Error] Log: Log.Error
+2019-02-27 21:35:25.136 -05:00 [Error] Log: Log.Error
+2019-02-27 21:35:25.136 -05:00 [Fatal] Log: Log.Fatal
+2019-02-27 21:35:25.136 -05:00 [Fatal] Log: Log.Fatal
+2019-02-27 21:35:28.505 -05:00 [Information] Log: Log.Information
+2019-02-27 21:35:28.506 -05:00 [Warning] Log: Log.Warning
+2019-02-27 21:35:28.507 -05:00 [Error] Log: Log.Error
+2019-02-27 21:35:28.507 -05:00 [Fatal] Log: Log.Fatal
+2019-02-27 21:35:37.232 -05:00 [Information] Log: Log.Information
+2019-02-27 21:35:37.232 -05:00 [Warning] Log: Log.Warning
+2019-02-27 21:35:37.232 -05:00 [Error] Log: Log.Error
+2019-02-27 21:35:37.232 -05:00 [Fatal] Log: Log.Fatal

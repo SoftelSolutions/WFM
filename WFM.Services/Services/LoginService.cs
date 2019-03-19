@@ -14,16 +14,11 @@ namespace WFM.Services.Services
             _context = context;
         }
 
-        public bool login(string userName, string password)
+        public User Login(string userName, string password)
         {
             var result = _context.Users.Where(x => x.UserName == userName && x.Password == password).SingleOrDefault();
 
-            if (result != null)
-                return true;
-            else
-                return false;
+            return result;
         }
-
-        
     }
 }

@@ -1,0 +1,31 @@
+2019-02-28 21:39:54.217 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-02-28 21:39:54.217 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-02-28 21:39:54.607 -05:00 [Information] Request finished in 463.6836ms 200 
+2019-02-28 21:39:54.985 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-02-28 21:39:54.999 -05:00 [Information] Could break here :(
+2019-02-28 21:39:55.093 -05:00 [Error] It broke :(
+System.Exception: bohhhh very bad error
+   at WFMWebAPI.Controllers.ValuesController.Get() in C:\Projects\SoftelSolution\WFM\WFM\Controllers\ValuesController.cs:line 28
+2019-02-28 21:39:55.283 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-02-28 21:39:55.644 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 714.2458ms
+2019-02-28 21:39:55.652 -05:00 [Information] Request finished in 1518.2502ms 200 application/json; charset=utf-8
+
+2019-02-28 21:41:48.537 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-02-28 21:41:48.537 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-02-28 21:41:48.743 -05:00 [Information] Request finished in 233.1627ms 200 
+2019-02-28 21:41:49.232 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-02-28 21:41:49.248 -05:00 [Information] Could break here :(
+2019-02-28 21:41:49.413 -05:00 [Error] It broke :(
+System.Exception: bohhhh very bad error
+   at WFMWebAPI.Controllers.ValuesController.Get() in C:\Projects\SoftelSolution\WFM\WFM\Controllers\ValuesController.cs:line 28
+2019-02-28 21:41:49.596 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-02-28 21:41:49.835 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 693.4165ms
+2019-02-28 21:41:49.843 -05:00 [Information] Request finished in 1340.8106ms 200 application/json; charset=utf-8
+
+2019-02-28 21:43:19.971 -05:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-02-28 21:43:19.971 -05:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-02-28 21:43:20.158 -05:00 [Information] Request finished in 207.7556ms 200 
+2019-02-28 21:43:20.511 -05:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-02-28 21:43:20.569 -05:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-02-28 21:43:20.750 -05:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 294.1589ms
+2019-02-28 21:43:20.758 -05:00 [Information] Request finished in 816.7452ms 200 application/json; charset=utf-8
