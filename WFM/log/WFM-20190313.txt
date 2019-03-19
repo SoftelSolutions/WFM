@@ -1,0 +1,415 @@
+2019-03-13 00:03:48.535 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:03:48.535 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:03:48.535 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:03:48.859 -04:00 [Information] Request finished in 298.6246ms 200 
+2019-03-13 00:03:49.067 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:03:49.637 -04:00 [Information] Request finished in 1121.5044ms 200 text/html
+2019-03-13 00:03:49.637 -04:00 [Information] Request finished in 570.2401ms 200 text/html
+2019-03-13 00:03:49.984 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:03:50.045 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:03:50.136 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:03:50.242 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 408.4703ms
+2019-03-13 00:03:50.244 -04:00 [Information] Request finished in 1728.0482ms 200 application/json; charset=utf-8
+2019-03-13 00:03:50.934 -04:00 [Information] Request finished in 889.223ms 200 application/json;charset=utf-8
+2019-03-13 00:05:41.330 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User?Id=9&RoleId=1&UserName=gagan&Password=garg&ActiveStatus=true&IsDeleted=false  0
+2019-03-13 00:05:41.430 -04:00 [Information] Successfully validated the token.
+2019-03-13 00:05:41.434 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-13 00:05:41.496 -04:00 [Information] Authorization was successful for user: null.
+2019-03-13 00:05:42.025 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.UserRequest"]) - ModelState is Valid
+2019-03-13 00:05:51.302 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:05:54.580 -04:00 [Error] Failed executing DbCommand ("345"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:cab8b7c2-0016-48bb-8a55-0e8122abdf35
+Error Number:544,State:1,Class:16
+2019-03-13 00:05:54.895 -04:00 [Error] An exception occurred in the database while saving changes for context type '"WFM.Entity.WFMContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-03-13 00:05:55.070 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 13605.6694ms
+2019-03-13 00:05:55.189 -04:00 [Error] Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WFM.Services.Services.UserService.CreateUser(User user) in C:\Projects\SoftelSolution\WFM\WFM.Services\Services\UserService.cs:line 34
+   at WFM.WebAPI.Controllers.UserController.Post(UserRequest value) in C:\Projects\SoftelSolution\WFM\WFM\Controllers\UserController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WFM.WebAPI.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Projects\SoftelSolution\WFM\WFM\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2019-03-13 00:06:11.207 -04:00 [Information] Request finished in 29877.0454ms 500 application/json
+2019-03-13 00:06:21.466 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User?Id=9&RoleId=1&UserName=gagan&Password=garg&ActiveStatus=true&IsDeleted=false  0
+2019-03-13 00:06:21.468 -04:00 [Information] Successfully validated the token.
+2019-03-13 00:06:21.468 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-13 00:06:21.471 -04:00 [Information] Authorization was successful for user: null.
+2019-03-13 00:06:21.474 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.UserRequest"]) - ModelState is Valid
+2019-03-13 00:06:47.619 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:06:48.097 -04:00 [Error] Failed executing DbCommand ("238"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:cab8b7c2-0016-48bb-8a55-0e8122abdf35
+Error Number:544,State:1,Class:16
+2019-03-13 00:06:48.336 -04:00 [Error] An exception occurred in the database while saving changes for context type '"WFM.Entity.WFMContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-03-13 00:06:48.432 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 26961.6472ms
+2019-03-13 00:06:55.226 -04:00 [Error] Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WFM.Services.Services.UserService.CreateUser(User user) in C:\Projects\SoftelSolution\WFM\WFM.Services\Services\UserService.cs:line 34
+   at WFM.WebAPI.Controllers.UserController.Post(UserRequest value) in C:\Projects\SoftelSolution\WFM\WFM\Controllers\UserController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WFM.WebAPI.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Projects\SoftelSolution\WFM\WFM\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2019-03-13 00:06:55.227 -04:00 [Information] Request finished in 33760.4561ms 500 application/json
+2019-03-13 00:10:51.054 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:10:51.054 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:10:51.283 -04:00 [Information] Request finished in 226.6158ms 200 
+2019-03-13 00:10:51.754 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:10:51.804 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:10:52.028 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 309.2685ms
+2019-03-13 00:10:52.036 -04:00 [Information] Request finished in 1003.0958ms 200 application/json; charset=utf-8
+2019-03-13 00:10:53.357 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:10:53.574 -04:00 [Information] Request finished in 216.8178ms 200 text/html
+2019-03-13 00:10:54.603 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:10:54.935 -04:00 [Information] Request finished in 331.3983ms 200 application/json;charset=utf-8
+2019-03-13 00:12:14.172 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:12:14.172 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:12:14.373 -04:00 [Information] Request finished in 197.1354ms 200 
+2019-03-13 00:12:14.819 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:12:14.872 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:12:15.036 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 275.5766ms
+2019-03-13 00:12:15.042 -04:00 [Information] Request finished in 906.3415ms 200 application/json; charset=utf-8
+2019-03-13 00:12:21.145 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:12:21.296 -04:00 [Information] Request finished in 150.8085ms 200 text/html
+2019-03-13 00:12:22.051 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:12:22.327 -04:00 [Information] Request finished in 276.6791ms 200 application/json;charset=utf-8
+2019-03-13 00:14:23.773 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:14:23.773 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:14:24.024 -04:00 [Information] Request finished in 247.461ms 200 
+2019-03-13 00:14:24.601 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:14:24.675 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:14:24.886 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 345.2143ms
+2019-03-13 00:14:24.897 -04:00 [Information] Request finished in 1152.935ms 200 application/json; charset=utf-8
+2019-03-13 00:14:27.966 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:14:28.133 -04:00 [Information] Request finished in 166.8056ms 200 text/html
+2019-03-13 00:14:29.241 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:14:29.485 -04:00 [Information] Request finished in 244.0317ms 200 application/json;charset=utf-8
+2019-03-13 00:15:06.067 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User?Id=9&EmployeeId=33&RoleId=1&UserName=gagan&Password=2323&ActiveStatus=true&IsDeleted=false&CreatedUserId=1&CreatedDate=12-03-2018  0
+2019-03-13 00:15:06.199 -04:00 [Information] Successfully validated the token.
+2019-03-13 00:15:06.205 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-13 00:15:06.279 -04:00 [Information] Authorization was successful for user: null.
+2019-03-13 00:15:06.788 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.UserRequest"]) - ModelState is Valid
+2019-03-13 00:15:31.752 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:15:36.226 -04:00 [Error] Failed executing DbCommand ("324"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Boolean), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime2), @p9='?' (DbType = Int32), @p10='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:e801e174-13f1-4ab4-b6be-19e8762e998a
+Error Number:544,State:1,Class:16
+2019-03-13 00:15:36.528 -04:00 [Error] An exception occurred in the database while saving changes for context type '"WFM.Entity.WFMContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'Users' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-03-13 00:15:36.688 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 30441.6979ms
+2019-03-13 00:24:53.520 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:24:53.520 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:24:53.520 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:24:53.806 -04:00 [Information] Request finished in 282.6957ms 200 
+2019-03-13 00:24:54.317 -04:00 [Information] Request finished in 830.7373ms 200 text/html
+2019-03-13 00:24:54.595 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:24:54.671 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:24:54.674 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:24:54.726 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 239.3993ms
+2019-03-13 00:24:54.727 -04:00 [Information] Request finished in 1241.0081ms 200 application/json; charset=utf-8
+2019-03-13 00:24:55.008 -04:00 [Information] Request finished in 333.898ms 200 application/json;charset=utf-8
+2019-03-13 00:25:10.391 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-13 00:25:11.031 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-13 00:25:11.681 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:25:13.793 -04:00 [Information] Executed DbCommand ("327"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-13 00:25:13.957 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:25:13.958 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 3534.6203ms
+2019-03-13 00:25:13.970 -04:00 [Information] Request finished in 3578.8571ms 200 application/json; charset=utf-8
+2019-03-13 00:27:28.337 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User?EmployeeId=12&RoleId=1&UserName=gagan123&Password=1234&ActiveStatus=true&IsDeleted=false&CreatedUserId=1  0
+2019-03-13 00:27:28.417 -04:00 [Information] Successfully validated the token.
+2019-03-13 00:27:28.424 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-13 00:27:28.465 -04:00 [Information] Authorization was successful for user: null.
+2019-03-13 00:27:28.492 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.CreateUserRequest"]) - ModelState is Valid
+2019-03-13 00:27:42.057 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:27:49.482 -04:00 [Information] Executed DbCommand ("265"ms) [Parameters=["@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2019-03-13 00:27:54.068 -04:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-03-13 00:27:54.072 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 25629.0923ms
+2019-03-13 00:27:54.080 -04:00 [Information] Request finished in 25742.6647ms 200 
+2019-03-13 00:28:59.571 -04:00 [Information] Request starting HTTP/1.1 PUT http://localhost:64259/api/User/14?Id=14&RoleId=2&UserName=gagan&Password=1234567&ActiveStatus=true&IsDeleted=false&UpdateUserId=1&UpdateDate=12-03-2018  0
+2019-03-13 00:28:59.572 -04:00 [Information] Successfully validated the token.
+2019-03-13 00:28:59.572 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-13 00:28:59.603 -04:00 [Information] Authorization was successful for user: null.
+2019-03-13 00:28:59.612 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Put (WFM.WebAPI)" with arguments (["14", "WFM.WebAPI.DTOs.UserDTOs.UpdateUserRequest"]) - ModelState is Valid
+2019-03-13 00:29:05.575 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:29:05.850 -04:00 [Information] Executed DbCommand ("238"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__userId_0"
+2019-03-13 00:29:07.958 -04:00 [Information] Executed DbCommand ("235"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Users] SET [Password] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;"
+2019-03-13 00:29:09.220 -04:00 [Information] Executed DbCommand ("238"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]"
+2019-03-13 00:29:11.469 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:29:11.479 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Put (WFM.WebAPI)" in 11878.0006ms
+2019-03-13 00:29:11.480 -04:00 [Information] Request finished in 11908.4321ms 200 application/json; charset=utf-8
+2019-03-13 00:49:58.307 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:49:58.307 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:49:58.307 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:49:58.307 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:49:58.627 -04:00 [Information] Request finished in 338.8599ms 200 
+2019-03-13 00:49:59.181 -04:00 [Information] Request finished in 927.1839ms 200 text/html
+2019-03-13 00:49:59.181 -04:00 [Information] Request finished in 927.1895ms 200 text/html
+2019-03-13 00:49:59.382 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:49:59.455 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:49:59.466 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:49:59.513 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 225.3619ms
+2019-03-13 00:49:59.514 -04:00 [Information] Request finished in 1260.0369ms 200 application/json; charset=utf-8
+2019-03-13 00:49:59.746 -04:00 [Information] Request finished in 279.9423ms 200 application/json;charset=utf-8
+2019-03-13 00:51:17.046 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:51:17.046 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:51:17.046 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:51:17.316 -04:00 [Information] Request finished in 272.5803ms 200 
+2019-03-13 00:51:17.748 -04:00 [Information] Request finished in 728.1825ms 200 text/html
+2019-03-13 00:51:18.002 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:51:18.066 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:51:18.067 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:51:18.135 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 235.7493ms
+2019-03-13 00:51:18.136 -04:00 [Information] Request finished in 1116.4157ms 200 application/json; charset=utf-8
+2019-03-13 00:51:18.320 -04:00 [Information] Request finished in 252.7278ms 200 application/json;charset=utf-8
+2019-03-13 00:53:31.324 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:53:31.324 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:53:31.325 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:53:31.552 -04:00 [Information] Request finished in 235.7971ms 200 
+2019-03-13 00:53:31.607 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:53:31.979 -04:00 [Information] Request finished in 372.7526ms 200 text/html
+2019-03-13 00:53:31.979 -04:00 [Information] Request finished in 686.7651ms 200 text/html
+2019-03-13 00:53:32.216 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:53:32.269 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:53:32.271 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:53:32.330 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 195.9481ms
+2019-03-13 00:53:32.337 -04:00 [Information] Request finished in 1042.1711ms 200 application/json; charset=utf-8
+2019-03-13 00:53:32.545 -04:00 [Information] Request finished in 273.9229ms 200 application/json;charset=utf-8
+2019-03-13 00:54:41.002 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User application/json-patch+json 203
+2019-03-13 00:54:41.112 -04:00 [Information] Successfully validated the token.
+2019-03-13 00:54:41.116 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-13 00:54:41.176 -04:00 [Information] Authorization was successful for user: null.
+2019-03-13 00:54:41.799 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.CreateUserRequest"]) - ModelState is Valid
+2019-03-13 00:54:47.201 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-13 00:54:49.666 -04:00 [Information] Executed DbCommand ("309"ms) [Parameters=["@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2019-03-13 00:54:50.009 -04:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-03-13 00:54:50.013 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 8862.863ms
+2019-03-13 00:54:50.027 -04:00 [Information] Request finished in 9026.1404ms 200 
+2019-03-13 00:56:19.859 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:56:19.859 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:56:19.859 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:56:19.859 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:56:20.150 -04:00 [Information] Request finished in 287.9938ms 200 
+2019-03-13 00:56:20.559 -04:00 [Information] Request finished in 726.7307ms 200 text/html
+2019-03-13 00:56:20.560 -04:00 [Information] Request finished in 727.3718ms 200 text/html
+2019-03-13 00:56:20.830 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:56:20.878 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:56:20.901 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:56:20.980 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 249.0624ms
+2019-03-13 00:56:20.981 -04:00 [Information] Request finished in 1148.7172ms 200 application/json; charset=utf-8
+2019-03-13 00:56:21.184 -04:00 [Information] Request finished in 306.1146ms 200 application/json;charset=utf-8
+2019-03-13 00:57:15.696 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:57:15.698 -04:00 [Information] Request finished in 1.5621ms 200 text/html
+2019-03-13 00:57:15.877 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:57:15.882 -04:00 [Information] Request finished in 5.108ms 200 application/json;charset=utf-8
+2019-03-13 00:59:40.741 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-13 00:59:40.741 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-13 00:59:40.966 -04:00 [Information] Request finished in 221.7711ms 200 
+2019-03-13 00:59:41.542 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-13 00:59:41.586 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-13 00:59:41.840 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 359.4514ms
+2019-03-13 00:59:41.847 -04:00 [Information] Request finished in 1142.3445ms 200 application/json; charset=utf-8
+2019-03-13 00:59:43.109 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-13 00:59:43.287 -04:00 [Information] Request finished in 178.3467ms 200 text/html
+2019-03-13 00:59:45.580 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-13 00:59:45.852 -04:00 [Information] Request finished in 272.0114ms 200 application/json;charset=utf-8

@@ -31,29 +31,12 @@ namespace WFM.WebAPI.Controllers
             _userService = userService;
             _mapper = mapper;
         }
-        // GET: api/<controller>
-        //[HttpGet]
-        //public IEnumerable<UserResponse> Get()
-        //{
-        //    //usercontroller
-        //    //var identity = HttpContext.User.Identity as ClaimsIdentity;
-        //    //if (identity != null)
-        //    //{
-        //    //    IEnumerable<Claim> claims = identity.Claims;
-        //    //    // or
-        //    //    //identity.FindFirst("ClaimName").Value;
-
-        //    //}
-
-        //    //get all users 
-        //    var result = _userService.getAllUsers();
-        //    var users = _mapper.Map<List<UserResponse>>(result);
-        //    return users;
-        //}
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
+            var userId = HttpContext.Items["userId"];
+
             //get all users 
             var result = await _userService.GetAllUsers();
             var users = _mapper.Map<List<UserResponse>>(result);

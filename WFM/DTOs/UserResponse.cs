@@ -11,11 +11,11 @@ namespace WFM.WebAPI.DTOs
     {
         [DataMember]
         public int Id { get; set; }
-        [DataMember(Name ="empId")]
+        [DataMember]
         public int EmployeeId { get; set; }
         [DataMember]
         public int RoleId { get; set; }
-        [DataMember(Name = "user")]
+        [DataMember]
         public string UserName { get; set; }
         [DataMember]
         public string Password { get; set; }

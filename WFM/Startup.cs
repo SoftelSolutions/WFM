@@ -18,6 +18,9 @@ using System.Text;
 using WFM.WebAPI.Helpers;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System;
+using WFM.WebAPI.Claims;
 
 namespace WFMWebAPI
 {
@@ -34,8 +37,13 @@ namespace WFMWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // configure strongly typed settings objects
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            
+
             //var connection = @"Server=happy;Database=Work_Flow_Management;Trusted_Connection=True;ConnectRetryCount=0";
-            var connection = @"Server=103.48.50.146,1232;Database=Work_Flow_Management;ConnectRetryCount=0;User Id=wfm;Password=Wfm@123#;";
+            string connection = appSettingsSection["connectionString"];
+            
             services.AddDbContext<WFMContext>
                 (options => options.UseSqlServer(connection));
             services.AddTransient<IUserService, UserService>();
@@ -66,10 +74,15 @@ namespace WFMWebAPI
                 options.Filters.Add(typeof(ValidateModelAttribute));
             });
 
+            services.AddMvc(option =>
+            {
+                option.Filters.Add(typeof(ClaimActionFilter));
+            });
+
             //JWT
 
             // configure strongly typed settings objects
-            var appSettingsSection = Configuration.GetSection("AppSettings");
+            //var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
 
             // configure jwt authentication
@@ -88,7 +101,20 @@ namespace WFMWebAPI
 
                             ValidIssuer = "http://localhost:64259",
                             ValidAudience = "http://localhost:64259",
-                            IssuerSigningKey = new SymmetricSecurityKey(key)
+                            IssuerSigningKey = new SymmetricSecurityKey(key),
+                            ClockSkew = TimeSpan.Zero
+
+                        };
+                        options.Events = new JwtBearerEvents
+                        {
+                            OnAuthenticationFailed = context =>
+                            {
+                                if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
+                                {
+                                    context.Response.Headers.Add("Token-Expired", "true");
+                                }
+                                return System.Threading.Tasks.Task.CompletedTask;
+                            }
                         };
                     });
         }
@@ -105,6 +131,8 @@ namespace WFMWebAPI
             loggerFactory.AddSerilog();
 
             app.ConfigureExceptionHandler();
+
+            
 
             //Add Authentication 
             app.UseAuthentication();

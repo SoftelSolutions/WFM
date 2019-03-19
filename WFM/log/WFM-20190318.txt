@@ -1,0 +1,491 @@
+2019-03-18 00:48:27.554 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 00:48:27.554 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 00:48:27.809 -04:00 [Information] Request finished in 262.1548ms 200 
+2019-03-18 00:48:28.084 -04:00 [Information] Request finished in 551.3672ms 404 
+2019-03-18 00:48:46.286 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 00:48:46.559 -04:00 [Information] Request finished in 272.7066ms 200 text/html
+2019-03-18 00:48:47.549 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 00:48:47.790 -04:00 [Information] Request finished in 240.6559ms 200 application/json;charset=utf-8
+2019-03-18 00:49:04.247 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 00:49:04.884 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 00:49:05.427 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 00:49:08.803 -04:00 [Information] Executed DbCommand ("701"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 00:49:08.973 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 00:49:09.003 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 4669.3696ms
+2019-03-18 00:49:09.013 -04:00 [Information] Request finished in 4765.7724ms 200 application/json; charset=utf-8
+2019-03-18 00:49:42.079 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 00:49:42.158 -04:00 [Information] Successfully validated the token.
+2019-03-18 00:49:42.161 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 00:49:42.196 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 00:50:58.927 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 00:50:58.927 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 00:50:59.100 -04:00 [Information] Request finished in 173.0901ms 200 
+2019-03-18 00:50:59.286 -04:00 [Information] Request finished in 380.6977ms 404 
+2019-03-18 00:51:05.378 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 00:51:05.699 -04:00 [Information] Request finished in 320.9131ms 200 text/html
+2019-03-18 00:51:06.097 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 00:51:06.313 -04:00 [Information] Request finished in 216.1038ms 200 application/json;charset=utf-8
+2019-03-18 00:51:17.274 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 00:51:17.361 -04:00 [Information] Successfully validated the token.
+2019-03-18 00:51:17.372 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 00:51:17.468 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 00:51:17.865 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-18 01:04:50.958 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 01:04:51.337 -04:00 [Information] Request finished in 389.2156ms 404 
+2019-03-18 01:10:48.269 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 01:10:48.269 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 01:10:48.438 -04:00 [Information] Request finished in 185.9254ms 200 
+2019-03-18 01:10:48.659 -04:00 [Information] Request finished in 423.9133ms 404 
+2019-03-18 01:10:49.640 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 01:10:49.900 -04:00 [Information] Request finished in 259.6483ms 200 text/html
+2019-03-18 01:10:50.818 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 01:10:51.022 -04:00 [Information] Request finished in 204.0326ms 200 application/json;charset=utf-8
+2019-03-18 01:11:04.466 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 01:11:05.167 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 01:11:05.756 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 01:11:09.383 -04:00 [Information] Executed DbCommand ("690"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 01:11:09.550 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 01:11:09.583 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 5036.5482ms
+2019-03-18 01:11:09.592 -04:00 [Information] Request finished in 5126.1727ms 200 application/json; charset=utf-8
+2019-03-18 01:12:07.751 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User application/json-patch+json 196
+2019-03-18 01:12:07.816 -04:00 [Information] Successfully validated the token.
+2019-03-18 01:12:07.819 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 01:12:07.856 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 01:12:07.878 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.CreateUserRequest"]) - ModelState is Valid
+2019-03-18 01:12:52.013 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 01:12:53.239 -04:00 [Information] Executed DbCommand ("587"ms) [Parameters=["@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2019-03-18 01:12:53.847 -04:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-03-18 01:12:53.849 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 46018.4968ms
+2019-03-18 01:12:53.854 -04:00 [Information] Request finished in 46103.8518ms 200 
+2019-03-18 01:14:08.058 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 01:14:08.058 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 01:14:08.058 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 01:14:08.268 -04:00 [Information] Request finished in 210.7813ms 200 
+2019-03-18 01:14:08.522 -04:00 [Information] Request finished in 491.7823ms 404 
+2019-03-18 01:14:08.564 -04:00 [Information] Request finished in 533.4387ms 200 text/html
+2019-03-18 01:14:08.762 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 01:14:08.986 -04:00 [Information] Request finished in 223.389ms 200 application/json;charset=utf-8
+2019-03-18 01:14:52.719 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/User application/json-patch+json 196
+2019-03-18 01:14:52.837 -04:00 [Information] Successfully validated the token.
+2019-03-18 01:14:52.848 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 01:14:52.953 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 01:14:53.582 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.UserDTOs.CreateUserRequest"]) - ModelState is Valid
+2019-03-18 01:15:02.655 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 01:15:06.558 -04:00 [Information] Executed DbCommand ("751"ms) [Parameters=["@p0='?' (DbType = Boolean), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime2), @p8='?' (DbType = Int32), @p9='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Users] ([ActiveStatus], [CreatedDate], [CreatedUserId], [EmployeeId], [IsDeleted], [Password], [RoleId], [UpdateDate], [UpdateUserId], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+2019-03-18 01:15:07.385 -04:00 [Information] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-03-18 01:15:07.399 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Post (WFM.WebAPI)" in 14466.5863ms
+2019-03-18 01:15:07.411 -04:00 [Information] Request finished in 14692.4585ms 200 
+2019-03-18 20:50:37.661 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 20:50:37.661 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 20:50:37.661 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 20:50:37.846 -04:00 [Information] Request finished in 174.5294ms 200 
+2019-03-18 20:50:38.143 -04:00 [Information] Request finished in 502.428ms 404 
+2019-03-18 20:50:38.194 -04:00 [Information] Request finished in 553.6735ms 200 text/html
+2019-03-18 20:50:38.495 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 20:50:38.544 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/favicon-32x32.png  
+2019-03-18 20:50:38.581 -04:00 [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2019-03-18 20:50:38.605 -04:00 [Information] Request finished in 60.7562ms 200 image/png
+2019-03-18 20:50:38.739 -04:00 [Information] Request finished in 243.4583ms 200 application/json;charset=utf-8
+2019-03-18 20:50:56.804 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 20:50:57.532 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 20:50:58.076 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 20:51:01.500 -04:00 [Information] Executed DbCommand ("772"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 20:51:01.713 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 20:51:01.760 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 4854.2108ms
+2019-03-18 20:51:01.778 -04:00 [Information] Request finished in 4974.5211ms 200 application/json; charset=utf-8
+2019-03-18 21:34:06.922 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 21:34:06.921 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 21:34:07.081 -04:00 [Information] Request finished in 162.1191ms 200 
+2019-03-18 21:34:07.287 -04:00 [Information] Request finished in 389.2805ms 404 
+2019-03-18 21:34:11.371 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 21:34:11.639 -04:00 [Information] Request finished in 268.5799ms 200 text/html
+2019-03-18 21:34:12.395 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 21:34:12.595 -04:00 [Information] Request finished in 199.977ms 200 application/json;charset=utf-8
+2019-03-18 21:34:23.588 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 21:34:31.919 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 21:34:32.395 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 21:34:35.475 -04:00 [Information] Executed DbCommand ("426"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 21:34:50.669 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 21:34:50.700 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 27019.5106ms
+2019-03-18 21:34:50.709 -04:00 [Information] Request finished in 27120.4901ms 200 application/json; charset=utf-8
+2019-03-18 21:35:23.096 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 21:35:23.169 -04:00 [Information] Successfully validated the token.
+2019-03-18 21:35:23.174 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 21:35:23.208 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 21:35:25.201 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-18 21:35:25.214 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 21:35:25.657 -04:00 [Information] Executed DbCommand ("370"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]"
+2019-03-18 21:35:27.769 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 21:35:27.778 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" in 4591.7441ms
+2019-03-18 21:35:27.784 -04:00 [Information] Request finished in 4688.1628ms 200 application/json; charset=utf-8
+2019-03-18 21:35:52.790 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 21:35:52.790 -04:00 [Information] Successfully validated the token.
+2019-03-18 21:35:52.790 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 21:35:52.793 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 21:35:54.202 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-18 21:35:58.855 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 21:35:59.287 -04:00 [Information] Executed DbCommand ("429"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ActiveStatus], [u].[CreatedDate], [u].[CreatedUserId], [u].[EmployeeId], [u].[IsDeleted], [u].[Password], [u].[RoleId], [u].[UpdateDate], [u].[UpdateUserId], [u].[UserName]
+FROM [Users] AS [u]"
+2019-03-18 21:36:03.112 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 21:36:03.112 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" in 10319.2554ms
+2019-03-18 21:36:03.113 -04:00 [Information] Request finished in 10322.832ms 200 application/json; charset=utf-8
+2019-03-18 22:18:46.368 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 22:18:46.368 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 22:18:46.368 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 22:18:46.548 -04:00 [Information] Request finished in 188.3062ms 200 
+2019-03-18 22:18:46.818 -04:00 [Information] Request finished in 476.2244ms 404 
+2019-03-18 22:18:46.851 -04:00 [Information] Request finished in 509.3252ms 200 text/html
+2019-03-18 22:18:47.050 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 22:18:47.274 -04:00 [Information] Request finished in 223.5546ms 200 application/json;charset=utf-8
+2019-03-18 22:18:56.233 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 22:19:06.914 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 22:19:07.415 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 22:19:10.602 -04:00 [Information] Executed DbCommand ("524"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 22:19:10.766 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 22:19:10.796 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 14456.5897ms
+2019-03-18 22:19:10.811 -04:00 [Information] Request finished in 14577.4445ms 200 application/json; charset=utf-8
+2019-03-18 22:19:35.105 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 22:19:35.168 -04:00 [Information] Successfully validated the token.
+2019-03-18 22:19:35.171 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 22:19:35.205 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 22:19:49.092 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-18 22:39:19.125 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 22:39:19.125 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 22:39:19.326 -04:00 [Information] Request finished in 207.228ms 200 
+2019-03-18 22:39:19.558 -04:00 [Information] Request finished in 456.4816ms 404 
+2019-03-18 22:39:19.931 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 22:39:20.256 -04:00 [Information] Request finished in 324.467ms 200 text/html
+2019-03-18 22:39:20.893 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 22:39:21.098 -04:00 [Information] Request finished in 204.7818ms 200 application/json;charset=utf-8
+2019-03-18 22:39:31.607 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 22:39:32.254 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 22:39:32.830 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 22:39:36.001 -04:00 [Information] Executed DbCommand ("390"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 22:39:36.163 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 22:39:36.194 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 4502.4832ms
+2019-03-18 22:39:36.203 -04:00 [Information] Request finished in 4596.2019ms 200 application/json; charset=utf-8
+2019-03-18 22:39:57.643 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 22:39:57.720 -04:00 [Information] Successfully validated the token.
+2019-03-18 22:39:57.724 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 22:39:57.761 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 22:39:57.762 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-18 23:07:56.558 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:07:56.558 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:07:56.559 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:07:56.559 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:07:57.031 -04:00 [Information] Request finished in 510.2087ms 200 
+2019-03-18 23:07:57.821 -04:00 [Information] Request finished in 1335.9301ms 404 
+2019-03-18 23:07:57.872 -04:00 [Information] Request finished in 1369.2772ms 200 text/html
+2019-03-18 23:07:57.872 -04:00 [Information] Request finished in 1387.1466ms 200 text/html
+2019-03-18 23:07:58.285 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:07:58.648 -04:00 [Information] Request finished in 362.6809ms 200 application/json;charset=utf-8
+2019-03-18 23:08:10.674 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:13:23.053 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:13:23.053 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:13:23.053 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:13:23.053 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:13:23.570 -04:00 [Information] Request finished in 550.7494ms 200 
+2019-03-18 23:13:24.315 -04:00 [Information] Request finished in 1334.4874ms 404 
+2019-03-18 23:13:24.397 -04:00 [Information] Request finished in 1415.8061ms 200 text/html
+2019-03-18 23:13:24.397 -04:00 [Information] Request finished in 1415.5597ms 200 text/html
+2019-03-18 23:13:24.774 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:13:25.172 -04:00 [Information] Request finished in 397.5766ms 200 application/json;charset=utf-8
+2019-03-18 23:13:38.031 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:13:47.553 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 23:13:49.154 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 23:13:52.874 -04:00 [Information] Executed DbCommand ("489"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 23:13:53.281 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 23:13:53.335 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 15010.616ms
+2019-03-18 23:13:53.347 -04:00 [Information] Request finished in 15316.1566ms 200 application/json; charset=utf-8
+2019-03-18 23:14:16.978 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/User  
+2019-03-18 23:14:17.109 -04:00 [Information] Successfully validated the token.
+2019-03-18 23:14:17.115 -04:00 [Information] AuthenticationScheme: "Bearer" was successfully authenticated.
+2019-03-18 23:14:17.267 -04:00 [Information] Authorization was successful for user: "1".
+2019-03-18 23:14:26.729 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.UserController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-18 23:22:10.011 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:22:10.011 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:22:10.011 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:22:10.011 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:22:10.453 -04:00 [Information] Request finished in 399.2827ms 200 
+2019-03-18 23:22:11.129 -04:00 [Information] Request finished in 1170.9409ms 404 
+2019-03-18 23:22:11.214 -04:00 [Information] Request finished in 1256.0672ms 200 text/html
+2019-03-18 23:22:11.214 -04:00 [Information] Request finished in 1255.9847ms 200 text/html
+2019-03-18 23:22:11.716 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:22:12.119 -04:00 [Information] Request finished in 402.6801ms 200 application/json;charset=utf-8
+2019-03-18 23:22:23.985 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:22:31.906 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 23:22:33.115 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 23:22:34.145 -04:00 [Error] An exception occurred while iterating over the results of a query for context type '"WFM.Entity.WFMContext"'."
+""System.ArgumentException: Format of the initialization string does not conform to specification starting at index 108.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()"
+System.ArgumentException: Format of the initialization string does not conform to specification starting at index 108.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2019-03-18 23:22:34.154 -04:00 [Error] An exception occurred while iterating over the results of a query for context type '"WFM.Entity.WFMContext"'."
+""System.ArgumentException: Format of the initialization string does not conform to specification starting at index 108.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)"
+System.ArgumentException: Format of the initialization string does not conform to specification starting at index 108.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2019-03-18 23:22:47.057 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 22823.4936ms
+2019-03-18 23:22:48.622 -04:00 [Error] Something went wrong: System.ArgumentException: Format of the initialization string does not conform to specification starting at index 108.
+   at System.Data.Common.DbConnectionOptions.GetKeyValuePair(String connectionString, Int32 currentPosition, StringBuilder buffer, Boolean useOdbcRules, String& keyname, String& keyvalue)
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Dictionary`2 parsetable, String connectionString, Boolean buildChain, Dictionary`2 synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Dictionary`2 synonyms, Boolean useOdbcRules)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source)
+   at WFM.Services.Services.LoginService.Login(String userName, String password) in C:\Projects\SoftelSolution\WFM\WFM.Services\Services\LoginService.cs:line 19
+   at WFM.WebAPI.Controllers.LoginController.Login(LoginRequest login) in C:\Projects\SoftelSolution\WFM\WFM\Controllers\LoginController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at WFM.WebAPI.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Projects\SoftelSolution\WFM\WFM\CustomExceptionMiddleware\ExceptionMiddleware.cs:line 27
+2019-03-18 23:22:48.713 -04:00 [Information] Request finished in 24728.331ms 500 application/json
+2019-03-18 23:24:37.730 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:24:37.730 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:24:37.730 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:24:38.328 -04:00 [Information] Request finished in 625.3017ms 200 
+2019-03-18 23:24:39.139 -04:00 [Information] Request finished in 1474.26ms 404 
+2019-03-18 23:24:39.234 -04:00 [Information] Request finished in 1546.8366ms 200 text/html
+2019-03-18 23:24:39.645 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:24:40.012 -04:00 [Information] Request finished in 367.8948ms 200 application/json;charset=utf-8
+2019-03-18 23:24:51.751 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:24:56.402 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 23:24:57.000 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 23:24:57.495 -04:00 [Error] An exception occurred while iterating over the results of a query for context type '"WFM.Entity.WFMContext"'."
+""System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()"
+System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2019-03-18 23:24:57.498 -04:00 [Error] An exception occurred while iterating over the results of a query for context type '"WFM.Entity.WFMContext"'."
+""System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)"
+System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2019-03-18 23:25:51.851 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:25:51.851 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:25:52.130 -04:00 [Information] Request finished in 340.8259ms 200 
+2019-03-18 23:25:52.404 -04:00 [Information] Request finished in 624.8193ms 404 
+2019-03-18 23:25:54.157 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:25:54.448 -04:00 [Information] Request finished in 291.2746ms 200 text/html
+2019-03-18 23:25:55.247 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:25:55.504 -04:00 [Information] Request finished in 257.3392ms 200 application/json;charset=utf-8
+2019-03-18 23:26:19.677 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:26:27.512 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 23:26:38.765 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 23:26:39.355 -04:00 [Error] An exception occurred while iterating over the results of a query for context type '"WFM.Entity.WFMContext"'."
+""System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()"
+System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2019-03-18 23:26:39.356 -04:00 [Error] An exception occurred while iterating over the results of a query for context type '"WFM.Entity.WFMContext"'."
+""System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)"
+System.ArgumentException: Keyword not supported: '@server'.
+   at System.Data.SqlClient.SqlConnectionStringBuilder.GetIndex(String keyword)
+   at System.Data.SqlClient.SqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.get_IsMultipleActiveResultSetsEnabled()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Microsoft.EntityFrameworkCore.Storage.IRelationalConnection.UnregisterBufferable(IBufferable bufferable)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.Dispose()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass19_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2019-03-18 23:27:04.836 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-18 23:27:04.836 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:27:04.836 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-18 23:27:04.836 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-18 23:27:05.158 -04:00 [Information] Request finished in 342.7055ms 200 
+2019-03-18 23:27:05.660 -04:00 [Information] Request finished in 857.2913ms 404 
+2019-03-18 23:27:05.694 -04:00 [Information] Request finished in 890.899ms 200 text/html
+2019-03-18 23:27:05.694 -04:00 [Information] Request finished in 890.8523ms 200 text/html
+2019-03-18 23:27:06.053 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-18 23:27:06.339 -04:00 [Information] Request finished in 286.4566ms 200 application/json;charset=utf-8
+2019-03-18 23:27:18.340 -04:00 [Information] Request starting HTTP/1.1 POST http://localhost:64259/api/Login application/json-patch+json 46
+2019-03-18 23:27:23.020 -04:00 [Information] Executing action method "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" with arguments (["WFM.WebAPI.DTOs.LoginDTOs.LoginRequest"]) - ModelState is Valid
+2019-03-18 23:27:23.574 -04:00 [Information] Entity Framework Core "3.0.0-preview.18572.1" initialized '"WFMContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2019-03-18 23:27:26.316 -04:00 [Information] Executed DbCommand ("404"ms) [Parameters=["@__userName_0='?' (Size = 4000), @__password_1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[ActiveStatus], [x].[CreatedDate], [x].[CreatedUserId], [x].[EmployeeId], [x].[IsDeleted], [x].[Password], [x].[RoleId], [x].[UpdateDate], [x].[UpdateUserId], [x].[UserName]
+FROM [Users] AS [x]
+WHERE ([x].[UserName] = @__userName_0) AND ([x].[Password] = @__password_1)"
+2019-03-18 23:27:26.498 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-18 23:27:26.551 -04:00 [Information] Executed action "WFM.WebAPI.Controllers.LoginController.Login (WFM.WebAPI)" in 8102.5462ms
+2019-03-18 23:27:26.560 -04:00 [Information] Request finished in 8219.883ms 200 application/json; charset=utf-8

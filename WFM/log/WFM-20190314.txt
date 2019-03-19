@@ -1,0 +1,22 @@
+2019-03-14 22:43:20.807 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-14 22:43:20.807 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-14 22:43:21.027 -04:00 [Information] Request finished in 221.6084ms 200 
+2019-03-14 22:43:21.518 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-14 22:43:21.593 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-14 22:43:21.833 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 366.3673ms
+2019-03-14 22:43:21.846 -04:00 [Information] Request finished in 1060.4137ms 200 application/json; charset=utf-8
+2019-03-14 22:43:43.825 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-14 22:43:43.971 -04:00 [Information] Request finished in 145.9376ms 200 text/html
+2019-03-14 22:43:44.966 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-14 22:43:45.157 -04:00 [Information] Request finished in 190.8213ms 200 application/json;charset=utf-8
+2019-03-14 22:44:46.475 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/api/values  
+2019-03-14 22:44:46.475 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/index.html  
+2019-03-14 22:44:46.475 -04:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:64259/  0
+2019-03-14 22:44:46.660 -04:00 [Information] Request finished in 176.6815ms 200 
+2019-03-14 22:44:46.964 -04:00 [Information] Request finished in 507.7596ms 200 text/html
+2019-03-14 22:44:47.139 -04:00 [Information] Executing action method "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" with arguments (null) - ModelState is Valid
+2019-03-14 22:44:47.205 -04:00 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2019-03-14 22:44:47.224 -04:00 [Information] Request starting HTTP/1.1 GET http://localhost:64259/swagger/v1/swagger.json  
+2019-03-14 22:44:47.249 -04:00 [Information] Executed action "WFMWebAPI.Controllers.ValuesController.Get (WFM.WebAPI)" in 202.5353ms
+2019-03-14 22:44:47.250 -04:00 [Information] Request finished in 794.2043ms 200 application/json; charset=utf-8
+2019-03-14 22:44:47.434 -04:00 [Information] Request finished in 209.9598ms 200 application/json;charset=utf-8
