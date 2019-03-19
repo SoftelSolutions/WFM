@@ -3,24 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Serilog;
 
 namespace WFMWebAPI.Controllers
 {
+
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-   
+        //private readonly ILogger<ValuesController> _logger;
+
+        //public ValuesController(ILogger<ValuesController> logger)
+        //{
+        //    _logger = logger;
+        //}
 
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            Log.Information("Log: Log.Information");
-            Log.Warning("Log: Log.Warning");
-            Log.Error("Log: Log.Error");
-            Log.Fatal("Log: Log.Fatal");
-
+            //object m = null;
+            //string s = m.ToString();
             return new string[] { "value1", "value2" };
         }
 

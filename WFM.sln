@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFM.WebAPI", "WFM\WFM.WebAPI.csproj", "{952DFE24-6600-43E0-8263-95AB0E9A42D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFM.WebAPI", "WFM\WFM.WebAPI.csproj", "{952DFE24-6600-43E0-8263-95AB0E9A42D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFM.Entity", "WFM.Entity\WFM.Entity.csproj", "{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFM.Entity", "WFM.Entity\WFM.Entity.csproj", "{3FF0E0A7-25D5-43D1-99F6-12BFABF42A71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFM.Services", "WFM.Services\WFM.Services.csproj", "{FE257EEE-AF83-46E1-B2E9-1960B1287957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WFM.Services", "WFM.Services\WFM.Services.csproj", "{FE257EEE-AF83-46E1-B2E9-1960B1287957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
