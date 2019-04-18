@@ -88,7 +88,17 @@ namespace WFMWebAPI
             // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.secretKey);
+            // Add service and create Policy with options
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
 
+            services.AddCors();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options =>
                     {
@@ -130,9 +140,7 @@ namespace WFMWebAPI
             // logging
             loggerFactory.AddSerilog();
 
-            app.ConfigureExceptionHandler();
-
-            
+            app.ConfigureExceptionHandler();            
 
             //Add Authentication 
             app.UseAuthentication();
@@ -147,8 +155,8 @@ namespace WFMWebAPI
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
 
-
-
+            // global policy - assign here or on each controller
+            app.UseCors("CorsPolicy");
 
             app.UseMvc();
         }
